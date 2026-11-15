@@ -1,0 +1,11 @@
+WEB DRONEROS COSTA BLANCA - NUEVA INSTALACIÓN
+
+Sube a la RAÍZ del repositorio GitHub Pages los cuatro archivos:
+index.html
+fondo_ifach_sin_texto.jpg
+logo.jpg
+atardecer_dron.jpg
+
+No subas el ZIP sin descomprimir. Si existen archivos anteriores, sustitúyelos.
+La imagen de fondo no contiene textos; los títulos y botones se crean con HTML.
+El botón de socio enlaza a https://forms.gle/3wX9oJAcuu3ULd7h8
