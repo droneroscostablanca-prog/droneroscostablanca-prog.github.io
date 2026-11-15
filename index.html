@@ -1,22 +1,346 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Asociación Droneros Costa Blanca: pilotos unidos por la pasión de volar, encuentros, colaboración y representación.">
-<title>Asociación Droneros Costa Blanca | Unidos por la pasión de volar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dron360 Experience</title>
+<meta name="description" content="Experiencias inmersivas cinematográficas en 360º para hoteles, inmobiliarias, villas, barcos y espacios premium.">
 <style>
-:root{color-scheme:dark;--bg:#07121f;--panel:#10253a;--txt:#f4f8fc;--muted:#b4c6d7;--accent:#55d7d0;--gold:#f3c776}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit}header{position:sticky;top:0;z-index:3;background:#07121fee;border-bottom:1px solid #ffffff20;backdrop-filter:blur(10px)}.nav{max-width:1160px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.06em;text-decoration:none;line-height:1.2}.brand small{display:block;color:var(--accent);font-size:.7rem;letter-spacing:.14em}.links{display:flex;flex-wrap:wrap;gap:17px;font-size:.9rem}.links a{text-decoration:none;color:#d7e6f1}.links a:hover{color:var(--accent)}.hero{min-height:610px;display:grid;place-items:center;text-align:center;padding:95px 20px;background:linear-gradient(180deg,#06111dc9,#06111df2),url('https://images.unsplash.com/photo-1506947411487-a56738267384?auto=format&fit=crop&w=1800&q=85') center/cover}.hero-inner{max-width:850px}.eyebrow{color:var(--accent);font-weight:750;text-transform:uppercase;letter-spacing:.2em;font-size:.85rem}h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.07;margin:16px 0}h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.2;margin:0 0 18px}p{margin:0 0 18px}.lead{font-size:1.22rem;color:#e0edf7}.btn{display:inline-block;background:var(--accent);color:#042029;border-radius:100px;padding:14px 25px;text-decoration:none;font-weight:800;margin:8px 6px 0 0}.btn.alt{background:transparent;border:1px solid #a2d8e0;color:#fff}.wrap{max-width:1120px;margin:auto;padding:78px 22px}.intro{max-width:800px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}.tile{padding:28px;border:1px solid #ffffff1b;background:linear-gradient(145deg,#142b40,#0a1b2b);border-radius:18px}.tile h3{margin:0 0 10px;color:#fff}.tile p{color:var(--muted);margin:0}.number{font-size:1.6rem;color:var(--accent);font-weight:800}.band{background:#102337}.highlight{border-left:4px solid var(--accent);padding:20px 25px;background:#ffffff0b;border-radius:0 12px 12px 0}.cta{text-align:center;background:radial-gradient(circle at top,#205168,#0a1c2b 70%);padding:75px 20px}.cta p{max-width:760px;margin:0 auto 18px}.fine{font-size:.9rem;color:var(--muted)}footer{padding:28px 22px;border-top:1px solid #ffffff24;color:var(--muted);text-align:center;font-size:.9rem}footer a{color:var(--accent)}@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column}.links{gap:12px}.hero{min-height:540px}.grid{grid-template-columns:1fr}.wrap{padding:58px 20px}}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f4f1ea;
+color:#102033;
+line-height:1.6;
+}
+
+.top-banner{
+width:100%;
+background:#f4f1ea;
+}
+
+.top-banner img{
+width:100%;
+display:block;
+}
+
+header{
+height:100vh;
+background:#102033;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero{
+max-width:900px;
+color:white;
+}
+
+.logo{
+font-size:18px;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:20px;
+color:#d8b36a;
+font-weight:bold;
+}
+
+h1{
+font-size:clamp(42px,7vw,82px);
+line-height:1.05;
+margin-bottom:24px;
+}
+
+.hero p{
+font-size:clamp(18px,2vw,24px);
+max-width:760px;
+margin:0 auto 35px;
+}
+
+.buttons{
+display:flex;
+gap:16px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 28px;
+border-radius:999px;
+font-weight:bold;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn-gold{
+background:#d8b36a;
+color:#102033;
+}
+
+.btn-outline{
+border:2px solid white;
+color:white;
+}
+
+section{
+padding:80px 8%;
+}
+
+.container{
+max-width:1300px;
+margin:auto;
+}
+
+h2{
+font-size:clamp(34px,5vw,56px);
+margin-bottom:20px;
+text-align:center;
+}
+
+.intro{
+max-width:850px;
+margin:0 auto 50px;
+text-align:center;
+font-size:20px;
+color:#45576b;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:24px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:12px;
+font-size:24px;
+color:#102033;
+}
+
+.dark{
+background:#102033;
+color:white;
+}
+
+.dark .intro{
+color:#d9e2ec;
+}
+
+.dark .card{
+background:#ffffff;
+color:#102033;
+border:1px solid rgba(214,173,95,.35);
+}
+
+.dark .card h3{
+color:#102033;
+}
+.video-box{
+margin-top:40px;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 12px 40px rgba(0,0,0,.2);
+}
+
+.video-box iframe{
+width:100%;
+aspect-ratio:16/9;
+border:none;
+}
+
+.notice{
+margin-top:20px;
+background:#fff4db;
+padding:18px 22px;
+border-left:5px solid #d8b36a;
+border-radius:12px;
+font-size:16px;
+}
+
+.cta{
+text-align:center;
+background:linear-gradient(135deg,#102033,#1f3a5c);
+color:white;
+}
+
+.cta p{
+max-width:800px;
+margin:20px auto 35px;
+font-size:21px;
+color:#dde7f2;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#ebe5d9;
+font-size:15px;
+color:#4f5d6d;
+}
+
+@media(max-width:768px){
+section{
+padding:60px 6%;
+}
+
+header{
+height:auto;
+padding:120px 20px;
+}
+}
 </style>
 </head>
 <body>
-<header><nav class="nav" aria-label="Navegación principal"><a class="brand" href="#inicio">DRONEROS COSTA BLANCA<small>ASOCIACIÓN DE PILOTOS DE DRONES</small></a><div class="links"><a href="#nosotros">Quiénes somos</a><a href="#objetivos">Objetivos</a><a href="#actividades">Actividades</a><a href="#socios">Hazte socio</a><a href="#contacto">Contacto</a></div></nav></header>
-<main>
-<section class="hero" id="inicio"><div class="hero-inner"><div class="eyebrow">Costa Blanca · España</div><h1>Unidos por la pasión de volar</h1><p class="lead">Una asociación creada para conectar pilotos de drones, compartir experiencias y trabajar juntos por el futuro de nuestra afición.</p><a class="btn" href="#socios">Hazte socio gratis</a><a class="btn alt" href="#nosotros">Conoce la asociación</a></div></section>
-<section class="wrap" id="nosotros"><div class="intro"><div class="eyebrow">Nuestra asociación</div><h2>Volamos más lejos cuando volamos juntos</h2><p>La Asociación Droneros Costa Blanca nace en Alicante con el propósito de reunir a pilotos aficionados y profesionales, fomentar el vuelo responsable y crear oportunidades de colaboración.</p><p class="muted">Queremos ser un punto de encuentro para quienes disfrutan de la fotografía aérea, el vídeo, los drones FPV y las distintas aplicaciones de estas aeronaves.</p></div></section>
-<section class="band" id="objetivos"><div class="wrap"><div class="eyebrow">Nuestra misión</div><h2>Objetivos que nos unen</h2><div class="grid"><article class="tile"><div class="number">01</div><h3>Representación</h3><p>Defender los intereses comunes de los pilotos y promover el diálogo con las instituciones competentes.</p></article><article class="tile"><div class="number">02</div><h3>Colaboración</h3><p>Establecer relaciones con otras asociaciones y estudiar iniciativas conjuntas de ámbito nacional.</p></article><article class="tile"><div class="number">03</div><h3>Vuelo responsable</h3><p>Fomentar la seguridad, la formación y una normativa proporcionada que permita disfrutar del vuelo con responsabilidad.</p></article><article class="tile"><div class="number">04</div><h3>Encuentros</h3><p>Promover quedadas, jornadas de convivencia y actividades para compartir conocimientos.</p></article><article class="tile"><div class="number">05</div><h3>Ventajas para socios</h3><p>Trabajar para alcanzar acuerdos con empresas y entidades que aporten beneficios a los asociados.</p></article><article class="tile"><div class="number">06</div><h3>Comunidad</h3><p>Conectar a personas con experiencia y a quienes están dando sus primeros pasos con los drones.</p></article></div></div></section>
-<section class="wrap" id="actividades"><div class="eyebrow">Encuentros y proyectos</div><h2>Una asociación activa y abierta</h2><p>Queremos impulsar quedadas, vuelos en grupo, encuentros con otras asociaciones y actividades divulgativas. Publicaremos aquí las próximas convocatorias y los acuerdos que vayamos formalizando.</p><div class="highlight">¿Representas a otra asociación o quieres proponer una colaboración? Nos encantará conocer vuestra iniciativa.</div></section>
-<section class="cta" id="socios"><div class="eyebrow">Únete al proyecto</div><h2>Hazte socio de Droneros Costa Blanca</h2><p>Durante el resto de 2026 puedes solicitar tu incorporación sin cuota de inscripción. Las solicitudes serán revisadas por la Junta Directiva.</p><a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdr-49LxwebKXR49lRRrQyyExFDYCr4c0Mv-F6114iWVQZYjg/viewform" target="_blank" rel="noopener noreferrer">Solicitar alta gratuita ↗</a><p class="fine" style="margin-top:22px">Para 2027 está prevista una cuota anual, pendiente de aprobación y comunicación. Las ventajas concretas se anunciarán cuando se formalicen los acuerdos correspondientes.</p></section>
-<section class="wrap" id="contacto"><div class="eyebrow">Hablemos</div><h2>Contacto y colaboraciones</h2><p>Si quieres colaborar, proponer una actividad o conocer mejor la asociación, escríbenos.</p><a class="btn alt" href="mailto:droneroscostablanca@gmail.com">droneroscostablanca@gmail.com</a></section>
-</main><footer>© <span id="year">2026</span> Asociación Droneros Costa Blanca · Pasión por volar. Compromiso por avanzar.<p class="fine" style="margin-top:12px">Antes de la publicación definitiva se incorporarán los textos legales y de privacidad correspondientes.</p></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+<div class="top-banner">
+
+  <img src="portada.png" alt="Dron360 Experience">
+
+</div>
+<header>
+<div class="hero">
+<div class="logo">DRON360 EXPERIENCE</div>
+<h1>Tus clientes lo verán y lo vivirán.</h1>
+<p>Experiencias inmersivas cinematográficas en 360º para hoteles, inmobiliarias, villas, barcos, gimnasios y espacios premium.</p>
+<div class="buttons">
+<a href="https://wa.me/34691201151" target="_blank" class="btn btn-gold">WhatsApp</a>
+<a href="#demo" class="btn btn-outline">Ver demo 360º</a>
+</div>
+</div>
+</header>
+
+<section>
+<div class="container">
+<h2>La nueva forma de mostrar un lugar</h2>
+<p class="intro">Creamos recorridos inmersivos donde el espectador puede explorar libremente el entorno en 360 grados y sentir el lugar antes de visitarlo.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Inmobiliarias</h3>
+<p>Haz que el comprador sienta la vivienda antes de entrar.</p>
+</div>
+
+<div class="card">
+<h3>Hoteles</h3>
+<p>Muestra habitaciones, terrazas, piscinas y experiencias de forma espectacular.</p>
+</div>
+
+<div class="card">
+<h3>Barcos</h3>
+<p>Recorridos flotantes y cinematográficos para venta o alquiler de embarcaciones.</p>
+</div>
+
+<div class="card">
+<h3>Gimnasios</h3>
+<p>Enseña ambiente, instalaciones y servicios de una forma moderna y diferente.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="container">
+<h2>Una sola grabación. Múltiples contenidos.</h2>
+<p class="intro">El recorrido inmersivo puede utilizarse como experiencia 360º y también como material base para crear reels, vídeos tradicionales y contenido publicitario.</p>
+
+<div class="grid">
+<div class="card">
+<h3>Grabación 360º</h3>
+<p>Capturamos todo el entorno para poder elegir diferentes enfoques posteriormente.</p>
+</div>
+
+<div class="card">
+<h3>Contenido reutilizable</h3>
+<p>Perfecto para redes sociales, YouTube, publicidad y campañas digitales.</p>
+</div>
+
+<div class="card">
+<h3>Libertad creativa</h3>
+<p>El cliente o su equipo pueden editar y reutilizar el contenido según sus necesidades.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="demo">
+<div class="container">
+<h2>Experiencia inmersiva 360º</h2>
+<p class="intro">Mueve el móvil o arrastra la pantalla para explorar el vídeo en 360 grados.</p>
+
+<div class="video-box">
+<iframe src="https://www.youtube.com/embed/NbNxLl7guSg" allowfullscreen></iframe>
+</div>
+<div style="text-align:center; margin:50px 0;">
+  <a href="https://www.youtube.com/watch?v=NbNxLl7guSg" target="_blank" style="
+    display:inline-block;
+    background:#ff0000;
+    color:white;
+    padding:20px 40px;
+    font-size:28px;
+    font-weight:bold;
+    border-radius:12px;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+  ">
+    ▶ VER EN YOUTUBE 360º
+  </a>
+</div>
+<div class="video-box" style="margin-top:40px;">
+<iframe src="https://www.youtube.com/embed/xa29e6Y7-BU"
+allowfullscreen></iframe>
+</div>
+
+<div style="text-align:center; margin:30px 0 60px;">
+<a href="https://www.youtube.com/watch?v=xa29e6Y7-BU"
+target="_blank" style="
+display:inline-block;
+background:#ff0000;
+color:white;
+padding:20px 40px;
+font-size:28px;
+font-weight:bold;
+border-radius:12px;
+text-decoration:none;
+font-family:Arial,sans-serif;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+">
+▶ VER OTRO VIDEO 360º
+</a>
+</div>
+</div>
+</section>
+
+<section class="cta">
+<div class="container">
+<h2>Convierte una visita en una experiencia</h2>
+<p>Si tienes un hotel, una villa, una inmobiliaria, un barco o un negocio premium, podemos ayudarte a mostrarlo de una forma completamente diferente.</p>
+
+<div class="buttons">
+<a href="https://wa.me/34691201151" target="_blank" class="btn btn-gold">Contactar ahora</a>
+<a href="https://www.youtube.com/@Dron360Experience" target="_blank" class="btn btn-outline">Canal YouTube</a>
+</div>
+</div>
+</section>
+
+<footer>
+<strong>Dron360 Experience</strong><br>
+Experiencias inmersivas cinematográficas para espacios premium.
+</footer>
+
+</body>
+</html>
